@@ -40,6 +40,9 @@ export default function CustomNavbar() {
               <Nav.Link>
                 <NavLink to="/contact">contact</NavLink>
               </Nav.Link>
+              <Nav.Link>
+                <NavLink to="/about">about</NavLink>
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
