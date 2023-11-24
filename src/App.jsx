@@ -1,15 +1,16 @@
-import CustomCardSlider from "./components/CustomCardSlider";
-import CustomCarousel from "./components/CustomCarousel";
-import CustomFooter from "./components/CustomFooter";
-import CustomNavbar from "./components/CustomNavbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (
-    <>
-      <CustomNavbar />
-      <CustomCarousel />
-      <CustomCardSlider />
-      <CustomFooter />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+// <HomePage />
