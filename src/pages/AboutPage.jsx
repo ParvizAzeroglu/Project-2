@@ -15,11 +15,15 @@ Hazırlıq Mərkəzinin məqsədi müxtəlif istiqamətlər üzrə hazırlıq ke
 `;
 
 export default function AboutPage() {
+  function isMobileDevice() {
+    return window.innerWidth <= 768;
+  }
+
   return (
     <>
       <CustomNavbar />
-      <Container>
-        <Card>
+      <Container className="d-flex align-items-center justify-content-center">
+        <Card className={isMobileDevice() ? "w-100" : "w-75"}>
           <Card.Img variant="top" src="imageAbout.jpg" />
           <Card.Body>
             <Card.Text>

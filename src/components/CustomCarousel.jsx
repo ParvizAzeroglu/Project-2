@@ -2,8 +2,11 @@ import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 
 function CustomCarousel() {
+  function isMobileDevice() {
+    return window.innerWidth <= 768;
+  }
   return (
-    <Container>
+    <Container className={isMobileDevice() ? "w-100" : "w-75"}>
       <Carousel data-bs-theme="dark" className="mx-auto mt-4">
         <Carousel.Item>
           <img
