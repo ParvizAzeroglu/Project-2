@@ -6,12 +6,14 @@ import AbituriyentPage from "./pages/AbituriyentPage";
 import Tekminlesdirme from "./pages/Tekminlesdirme";
 import Ibtidaisinif from "./pages/Ibtidaisinif";
 import Mektebeqeder from "./pages/Mektebeqeder";
+import TestPage from "./components/TestPage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<HomePage />} />
+        <Route path="/test" element={<TestPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/course">

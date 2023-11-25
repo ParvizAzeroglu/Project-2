@@ -1,6 +1,7 @@
 import { Card, Container } from "react-bootstrap";
 import CustomNavbar from "../components/CustomNavbar";
 import CustomFooter from "../components/CustomFooter";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export default function ContactPage() {
   return (
@@ -31,8 +32,17 @@ export default function ContactPage() {
           </Card.Text>
         </Card>
       </Container>
+
       <Container>Google Maps API</Container>
       <CustomFooter />
+      <FloatingWhatsApp
+        phoneNumber="+994507362188"
+        accountName="Adınız"
+        avatar="/images/avatar.jpg"
+        statusMessage=""
+        chatMessage="Komentiniz"
+        allowEsc={true}
+      />
     </>
   );
 }
