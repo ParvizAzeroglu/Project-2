@@ -71,6 +71,16 @@ export default function CustomNavbar() {
                   </NavLink>
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link disabled className="disabled">
+                <NavLink className="nav-link disabled" to="/">
+                  Digər Linklər
+                </NavLink>
+              </Nav.Link>
+              <Nav.Link disabled>
+                <NavLink className="nav-link disabled" to="/">
+                  Digər Linklər
+                </NavLink>
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
