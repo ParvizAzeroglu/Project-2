@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import CustomNavbar from "../components/CustomNavbar";
 import CustomFooter from "../components/CustomFooter";
 import { Card, CardBody, Container } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 export default function Tekminlesdirme() {
   function isMobileDevice() {
@@ -25,6 +26,12 @@ Növbəti tədris ilində 5, 6, 7 və 8-ci siniflərdə təhsil alacaq şagirdl�
       `;
   return (
     <>
+      <Helmet>
+        <title>Təkmilləşdirmə</title>
+        <meta name="description" content="kurs " />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+      </Helmet>
       <CustomNavbar />
       <Container className="d-flex align-items-center justify-content-center flex-column">
         <h1 className="text-center m-4">Təkmilləşdirmə</h1>

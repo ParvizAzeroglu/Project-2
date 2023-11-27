@@ -5,7 +5,7 @@ export default function CustomFooter() {
     <Card style={{ width: "100vw", marginTop: "50px" }}>
       <ListGroup variant="flush">
         <ListGroup.Item style={{ textAlign: "center" }}>
-          Location: Binəqədi r, 6-cı mkr, İ.Həşimov küç, ev 1A
+          Ünvan: Bakı, x-cı mkr, x küç, ev x
         </ListGroup.Item>
 
         <ListGroup.Item style={{ textAlign: "center" }}>

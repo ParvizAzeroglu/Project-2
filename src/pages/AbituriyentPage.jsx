@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import CustomNavbar from "../components/CustomNavbar";
 import CustomFooter from "../components/CustomFooter";
 import { Card, CardBody, Container } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 export default function AbituriyentPage() {
   function isMobileDevice() {
@@ -18,6 +19,12 @@ Növbəti tədris ilində 9, 10 və 11-ci siniflərdə təhsil alacaq şagirdlə
     `;
   return (
     <>
+      <Helmet>
+        <title>Abituriyent</title>
+        <meta name="description" content="kurs " />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+      </Helmet>
       <CustomNavbar />
       <Container className="d-flex align-items-center justify-content-center flex-column">
         <h1 className="text-center m-4">Abituriyent</h1>

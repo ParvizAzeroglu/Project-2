@@ -29,32 +29,46 @@ export default function CustomNavbar() {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-              <img src="logo.png" alt="" width="50px" />
+              <img src="/images/logo.png" alt="" width="50px" />
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link>
-                <NavLink to="/">Homepage</NavLink>
+                <NavLink className="nav-link" to="/">
+                  Ana Səhifə
+                </NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to="/contact">contact</NavLink>
+                <NavLink className="nav-link" to="/contact">
+                  Əlaqə
+                </NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to="/about">about</NavLink>
+                <NavLink className="nav-link" to="/about">
+                  Haqqımızda
+                </NavLink>
               </Nav.Link>
-              <NavDropdown title="Kurslar" id="nav-dropdown">
+              <NavDropdown title="Kurslar" id="nav-dropdown" className="m-2">
                 <NavDropdown.Item>
-                  <NavLink to="/course/abituriyent">Abituriyent</NavLink>
+                  <NavLink className="nav-link" to="/course/abituriyent">
+                    Abituriyent
+                  </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <NavLink to="/course/tekmillesdirme">Təkmilləşdirmə</NavLink>
+                  <NavLink className="nav-link" to="/course/tekmillesdirme">
+                    Təkmilləşdirmə
+                  </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item disabled>
-                  <NavLink to="/course/ibtidai-sinif">İbtidai sinif</NavLink>
+                  <NavLink className="nav-link" to="/course/ibtidai-sinif">
+                    İbtidai sinif
+                  </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item disabled>
-                  <NavLink to="/course/mektebeqeder">Məktəbəqədər</NavLink>
+                  <NavLink className="nav-link" to="/course/mektebeqeder">
+                    Məktəbəqədər
+                  </NavLink>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

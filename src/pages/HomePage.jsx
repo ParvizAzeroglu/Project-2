@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import CustomCardSlider from "../components/CustomCardSlider";
 import CustomCarousel from "../components/CustomCarousel";
 import CustomFooter from "../components/CustomFooter";
@@ -7,6 +8,12 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 export default function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>Ana Səhifə</title>
+        <meta name="description" content="kurs " />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+      </Helmet>
       <CustomNavbar />
       <CustomCarousel />
       <CustomCardSlider />
