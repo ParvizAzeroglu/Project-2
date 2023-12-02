@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin: 10px 25px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category {
+  padding: 10px 10px;
+  margin: 5px 5px 0px 5px;
+}
+
+.sort > * {
+  padding: 10px 10px;
+  margin: 5px 5px 0px 5px;
+}
+
+.header > h1 {
+  font-size: 2rem;
+}
+
+.menu {
+  padding: 20px 0px;
+  min-width: 100%;
+  border-top: 1px solid var(--color);
+}
+
+.menuItem {
+  background-color: var(--sub-bg);
+  margin: 20px 0px;
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menuImg {
+  border-radius: 20px;
+}
+
+.menuText {
+  margin-left: 10px;
+  width: 200px;
+  border-radius: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.menuHeader {
+  margin-top: 5px;
+}
+
+.menuCategory {
+  margin-top: 20px;
+}
+
+.menuButton {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
